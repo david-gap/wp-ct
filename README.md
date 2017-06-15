@@ -10,3 +10,6 @@ Plugin for adding custom types with taxanomies and metaboxes.
   * Define the backend menu name. Search for "dev: Define backend menu name"
   * Define slugs in the include file class-register.php. Search for "dev: Define slug"
   * Define custom fields in the include file class-metaboxes.php. Search for "dev: Define custom fields"
+
+## About
+Author: David Voglgsang
