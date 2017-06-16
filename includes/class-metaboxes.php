@@ -35,30 +35,30 @@ class Metabox_settings {
 		$output_name = ! isset( $meta['cf_name'][0] ) ? '' : $meta['cf_name'][0];
 		$output_class = ! isset( $meta['cf_class'][0] ) ? '' : $meta['cf_class'][0];
 
-		wp_nonce_field( basename( __FILE__ ), 'profile_fields' ); ?>
+		wp_nonce_field( basename( __FILE__ ), 'post-type-name' ); ?>
 		<table class="backend-metabox-output">
 			<tr>
 				<td>
-					<label for="output_id"><?php _e( 'ID', 'wp-ct' ); ?></label>
+					<label for="cf_id"><?php _e( 'ID', 'wp-ct' ); ?></label>
 				</td>
 				<td>
-					<input type="text" name="output_id" value="<?php echo $output_id; ?>">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<label for="output_name"><?php _e( 'Name', 'wp-ct' ); ?></label>
-				</td>
-				<td>
-					<input type="text" name="output_name" value="<?php echo $output_name; ?>">
+					<input type="text" name="cf_id" value="<?php echo $output_id; ?>">
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<label for="output_class"><?php _e( 'Class', 'wp-ct' ); ?></label>
+					<label for="cf_name"><?php _e( 'Name', 'wp-ct' ); ?></label>
 				</td>
 				<td>
-					<input type="text" name="output_class" value="<?php echo $output_class; ?>">
+					<input type="text" name="cf_name" value="<?php echo $output_name; ?>">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="cf_class"><?php _e( 'Class', 'wp-ct' ); ?></label>
+				</td>
+				<td>
+					<input type="text" name="cf_class" value="<?php echo $output_class; ?>">
 				</td>
 			</tr>
 
